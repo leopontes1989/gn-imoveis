@@ -1,0 +1,8 @@
+<a href="#">
+            <div class="card-imovel">
+                <img src="./assets/thumbs/bologna-thumb.jpg" alt="">
+                <span class="bairro">Nazaré</span>
+                <span class="preco-imovel">R$560.000,00</span>
+                <span class="tipo-imovel">Apartamento <br/> Venda</span>
+            </div>
+        </a>

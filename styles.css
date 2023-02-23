@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 :root {
      --main-color: rgb(186, 0, 0);
 }
@@ -9,13 +10,53 @@
     font-family: 'Oswald', sans-serif;
 }
 
+body, html {
+    position: relative;
+    width: 100%;
+}
+
 a {
     text-decoration: none;
 }
 
+.icon-wp {
+    position: fixed;
+    bottom: 65px;
+    right: 30px;
+    font-size: 32px;
+    background-color: #00c663;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 100;
+    opacity: .8;
+}
+
+.icon-wp i {
+    font-size: 45px;
+    padding-left: 1px;
+}
+
+/* .icon-wp i:hover {
+    transition: 800ms;
+    font-size: 45px;
+    padding-left: 1px;
+    font-weight: 900;
+    color: #01e675;
+} */
+
+.icon-wp:hover {
+    transition: 800ms;
+    box-shadow: 2px 2px 20px #5fe690;
+    opacity: 1;
+}
 
 .banner {
-    background-image: url(./assets/banner_header-01.png);
+    background-image: url(/assets/fotos_projeto/banner_header-01.png);
     background-repeat: no-repeat;
     background-size: 100% 190px;
     width: 100%;
@@ -62,16 +103,31 @@ a {
     letter-spacing: 2px;
     text-decoration: none;
     margin: 0;
-    padding: 10px;
+    padding: 5px;
     font-weight: 300;
     text-transform: uppercase;
+    position: relative;
 }
 
-.header-anchor:hover {
-    background-color: rgb(255, 255, 255);
-    color: var(--main-color);
-    transition: .8s;
-    
+.header-anchor:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all .4s ease-in-out 0s;
+    transition: all .4s ease-in-out 0s;   
+}
+
+.header-anchor:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 .apresentacao-container {
@@ -145,8 +201,8 @@ a {
 
 
 .card-imovel img:hover {
-    transition: 1s;
-    transform: scale(1.02);
+    transition: .5s;
+    transform: scale(1.02)
 }
 
 .card-imovel span {
@@ -174,6 +230,7 @@ a {
     font-family: 'Oswald', sans-serif;
     letter-spacing: 2px;
     color: #444;
+    padding-top: 5px;
 }
 
 .button {
@@ -206,6 +263,7 @@ a {
     height: 250px;
     background-color: var(--main-color);
     box-sizing: border-box;
+    padding-top: 15px;
 }
 
 .btn-f-container {
@@ -224,9 +282,6 @@ a {
     text-decoration: none;
     margin-top: 30px;
     margin-bottom: 10px;
-}
-
-.btn-footer {
     text-decoration: none;
     color: #fff;
     transition: 1s;
@@ -260,19 +315,20 @@ h4, h5, h6 {
     font-weight: 200;
     color: #fff;
     letter-spacing: 2px;
+
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 8px;
 }
 
 h5 {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 h6 {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 100;
     letter-spacing: 2px;
 }
@@ -292,15 +348,6 @@ i {
     color: var(--main-color);
 }
 
-.banner-icons i {
-    color: var(--main-color);
-    font-size: 50px;
-}
-
-.banner-list {
-    margin-left: 320px;
-    padding-top: 90px;
-}
 
 
 
@@ -308,9 +355,11 @@ i {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 412px) {
+
+
     .banner {
-        background-image: url(/Imagens/profile_final.png);
+        background-image: url(./assets/fotos_projeto/banner-responsivo.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
@@ -349,9 +398,27 @@ i {
 
     .p-titulo {
         font-size: 28px;
+        padding: 0 20px;
+        box-sizing: border-box;
     }
 
-   
+    .p-descricao {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .top-div {
+        text-align: center;
+        
+        margin-top: 20px;
+    }
+
+    .imoveis-card-container {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
 
 
 }

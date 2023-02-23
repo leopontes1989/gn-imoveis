@@ -12,7 +12,7 @@
 
 
 .banner {
-    background-image: url(../assets/banner_header-01.png);
+    background-image: url(../assets/fotos_projeto/banner_header-01.png);
     background-repeat: no-repeat;
     background-size: 100% 180px;
     width: 100%;
@@ -40,7 +40,7 @@
 .titulo-sec {
     color: #fff;
     font-size: 24px;
-    /* text-align: left; */
+    /* text-align: leffit; */
     font-weight:300;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -190,10 +190,5 @@ footer i {
     color: #fff;
     font-size: 40px;
 }
-
-iframe {
-    margin-bottom: 5px;
-}
-
 
 
