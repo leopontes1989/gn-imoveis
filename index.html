@@ -7,15 +7,16 @@
     <title>Gilberto Nobre Imóveis</title>
     <link rel="icon" href="./assets/fotos_projeto/LOGOgradientletter_vetorFINAL.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
-    
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 
 </head>
 <body>
+
     <header class="header-container">
-        <div class="banner">
-            
-        </div>
+        
+        <div class="banner"></div>
+
         <nav id="nav-container">
             <ul class="ul-top">
                 <li><a href="#" class="header-anchor">Início</a></li>
@@ -25,7 +26,27 @@
                 <li><a href="https://wa.me/559188437540" class="header-anchor" target="_blank">Contato</a></li>
             </ul>
         </nav>
+        
+        <div class="topnav">
+            <a href="#home" class="active"></a>
+            <div id="myLinks">
+                <ul class="ul-top">
+                    <li><a href="#" class="header-anchor">Início</a></li>
+                    <li><a href="#" class="header-anchor">Locação</a></li>
+                    <li><a href="#" class="header-anchor">Venda</a></li>
+                    <li><a href="#" class="header-anchor">Empreendimentos</a></li>
+                    <li><a href="https://wa.me/559188437540" class="header-anchor" target="_blank">Contato</a></li>
+                </ul>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        
+
     </header>
+
+
 
     <section>
         <div class="apresentacao-container">
@@ -40,8 +61,6 @@
             </div>
         </div>
     </section>
-
-   
 
     <div class="top-div">
         <p class="titulo-sec">Destaques - Venda</p>
@@ -191,5 +210,7 @@
         </div>
 
     </footer>
+
+    <script src="navbar.js"></script>
 </body>
 </html>
