@@ -352,6 +352,9 @@ i {
 
 /* Menu hamburguer */
 
+.topnav {
+    display: none;
+}
 
 
 @media (max-width: 768px) {
@@ -422,11 +425,11 @@ i {
     }
 
     .topnav {
+        display: block;
         overflow: hidden;
         background-color: rgb(186, 0, 0);
         position: relative;
-        border: none;
-        
+        border: none;  
       }
       
       .topnav #myLinks {
@@ -439,6 +442,7 @@ i {
         text-decoration: none;
         font-size: 20px;
         display: block;
+        padding-right: 10px;
       }
       
       .topnav a.icon {
@@ -447,7 +451,6 @@ i {
         right: 0;
         top: 0;
       }
-      
       
       .active {
         height: 30px;
