@@ -5,23 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gilberto Nobre Imóveis</title>
-    <link rel="icon" href="./assets/fotos_projeto/LOGOgradientletter_vetorFINAL.png">
+    <link rel="icon" href="./assets/fotos_projeto/LOGOgradientletter_vetor.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="/fontawesome/css/all.min.css">  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 
 </head>
-<body>
-
-    <header class="header-container">
-        
+<body onLoad="hideLoading();">
+    <header class="header-container">       
         <div class="banner"></div>
-
+        
         <nav id="nav-container">
-            <ul class="ul-top">
-                <li><a href="/index.html" class="header-anchor">Início</a></li>
+            <ul class="ul-top" >
+                <li><a href="/index.html" class="header-anchor" >Início</a></li>
                 <li><a href="/locacao.html" class="header-anchor">Locação</a></li>
-                <li><a href="/vendas.html" class="header-anchor">Venda</a></li>
+
+                <li class="nav-item dropdown">
+                    <span class="nav-link dropdown-toggle header-anchor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Venda
+                    </span>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/vendas.html">Apartamento</a></li>
+                      <li><a class="dropdown-item" href="/casa.html">Casa</a></li>
+                      <li><a class="dropdown-item" href="/galpao-terreno.html">Galpão / Terreno</a></li>
+                      <li><a class="dropdown-item" href="/sala-comercial.html">Sala Comercial</a></li>
+                    </ul>
+                </li>
                 <li><a href="/empreendimentos.html" class="header-anchor">Empreendimentos</a></li>
                 <li><a href="https://wa.me/559188437540" class="header-anchor" target="_blank">Contato</a></li>
             </ul>
@@ -39,17 +51,12 @@
                 </ul>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-            
+            <i class="fa fa-bars"></i>            
             </a>
         </div>
-        
-
     </header>
 
-
-
-    <section>
+    <section class="section-apresentacao">
         <div class="apresentacao-container">
             <div class="video-apresentacao">
                 <video src="/assets/fotos_projeto/VID-20230213-WA0018.mp4" class="video" controls></video>
@@ -71,74 +78,74 @@
         <a href="./imoveis/sublime.html" class="imovel_anchor" target="_blank">
             <div class="card-imovel">
                     <img src="./assets/thumbs/sublime-thumb.jpg" alt="">
-                    <span class="bairro">Pedreira</span>
+                    <h2 class="bairro">Pedreira</h2>
                     <span class="preco-imovel">R$550.000,00</span>
                     <span class="tipo-imovel">Apartamento<br/>Venda</span>
             </div>
         </a>
-        <a href="#">    
+        <a href="/imoveis/carpediem.html" class="imovel_anchor" target="_blank">    
             <div class="card-imovel">
                 <img src="./assets/thumbs/fachada.jpg" alt="">
-                <span class="bairro">Batista Campos</span>
+                <h2 class="bairro">Batista Campos</h2>
                 <span class="preco-imovel">R$1.300.000,00</span>
                 <span class="tipo-imovel">Apartamento<br/>  Venda</span>
             </div> 
         </a>
-        <a href="#">   
+        <a href="/imoveis/i-duncan.html" class="imovel_anchor" target="_blank">   
             <div class="card-imovel">
                 <img src="./assets/thumbs/is-duncan-thumb.jpg" alt="">
-                <span class="bairro">Marco</span>
+                <h2 class="bairro">Marco</h2>
                 <span class="preco-imovel">R$550.000,00</span>
                 <span class="tipo-imovel">Apartamento <br/> Venda</span>
             </div>
         </a>
-        <a href="#">
+        <a href="/imoveis/city-way.html" class="imovel_anchor" target="_blank">
             <div class="card-imovel">
                 <img src="./assets/thumbs/city-way-thumb.jpg" alt="">
-                <span class="bairro">Marco</span>
+                <h2 class="bairro">Marco</h2>
                 <span class="preco-imovel">R$680.000,00</span>
                 <span class="tipo-imovel">Apartamento <br/> Venda</span>
             </div>
         </a>
         </section>
-        <section class="imoveis-card-container">
+    <section class="imoveis-card-container">
 
-        <a href="#" class="imovel_anchor" target="_blank">
-            <div class="card-imovel">
-                    <img src="./assets/thumbs/luanda-thumb.jpg" alt="">
-                    <span class="bairro">Pedreira</span>
-                    <span class="preco-imovel">R$450.000,00</span>
-                    <span class="tipo-imovel">Apartamento<br/>Venda</span>
-            </div>
-        </a>
-        <a href="#">    
-            <div class="card-imovel">
-                <img src="./assets/thumbs/fontb-thumb.jpg" alt="">
-                <span class="bairro">Fátima</span>
-                <span class="preco-imovel">R$520.000,00</span>
-                <span class="tipo-imovel">Apartamento<br/>  Venda</span>
-            </div> 
-        </a>
-        <a href="#">   
-            <div class="card-imovel">
-                <img src="./assets/thumbs/parthenon-thumb.jpg" alt="">
-                <span class="bairro">Pedreira</span>
-                <span class="preco-imovel">R$560.000,00</span>
-                <span class="tipo-imovel">Apartamento <br/> Venda</span>
-            </div>
-        </a>
-        <a href="#">
-            <div class="card-imovel">
-                <img src="./assets/thumbs/apsmeira-thumb.jpg" alt="">
-                <span class="bairro">Batista Campos</span>
-                <span class="preco-imovel">R$650.000,00</span>
-                <span class="tipo-imovel">Apartamento <br/> Venda</span>
-            </div>
-        </a>
-            
-        </section>
+    <a href="/imoveis/luanda-2.html" class="imovel_anchor" target="_blank">
+        <div class="card-imovel">
+                <img src="./assets/thumbs/luanda-thumb.jpg" alt="">
+                <h2 class="bairro">Pedreira</h2>
+                <span class="preco-imovel">R$450.000,00</span>
+                <span class="tipo-imovel">Apartamento<br/>Venda</span>
+        </div>
+    </a>
+    <a href="/imoveis/fontainebleu.html" class="imovel_anchor" target="_blank">    
+        <div class="card-imovel">
+            <img src="./assets/thumbs/fontb-thumb.jpg" alt="">
+            <h2 class="bairro">Fátima</h2>
+            <span class="preco-imovel">R$520.000,00</span>
+            <span class="tipo-imovel">Apartamento<br/>  Venda</span>
+        </div> 
+    </a>
+    <a href="/imoveis/parthenon.html" class="imovel_anchor" target="_blank">   
+        <div class="card-imovel">
+            <img src="./assets/thumbs/parthenon-thumb.jpg" alt="">
+            <h2 class="bairro">Pedreira</h2>
+            <span class="preco-imovel">R$560.000,00</span>
+            <span class="tipo-imovel">Apartamento <br/> Venda</span>
+        </div>
+    </a>
+    <a href="/imoveis/apsmeira.html" class="imovel_anchor" target="_blank">
+        <div class="card-imovel">
+            <img src="./assets/thumbs/apsmeira-thumb.jpg" alt="">
+            <h2 class="bairro">Batista Campos</h2>
+            <span class="preco-imovel">R$650.000,00</span>
+            <span class="tipo-imovel">Apartamento <br/> Venda</span>
+        </div>
+    </a>
+        
+    </section>
         <div class="button-center">
-            <a href="#"><button class="button">Ver todos</button></a>
+            <a href="/vendas.html"><button class="button">Ver todos</button></a>
         </div>
 
     <div class="top-div">
@@ -147,52 +154,52 @@
 
     <section class="imoveis-card-container">
         <div class="card-imovel">
-            <a href="#"> 
+            <a href="#" class="imovel_anchor" target="_blank"> 
             <img src="./assets/fotos_projeto/meeting_Corretores_TorreEvidence15.webp" alt="">
-            <span class="bairro">Umarizal</span>
+            <h2 class="bairro">Umarizal</h2>
             <span class="preco-imovel">R$486.000,00</span>
             <span class="tipo-imovel">Empreendimento</span>
             </a>
         </div>
         <div class="card-imovel">
-            <a href="#"> 
+            <a href="#" class="imovel_anchor" target="_blank"> 
             <img src="/assets/thumbs/torre-ferrara-thumb.jpg" alt="">
-            <span class="bairro">Umarizal</span>
+            <h2 class="bairro">Umarizal</h2>
             <span class="preco-imovel">R$2.169.000,00</span>
             <span class="tipo-imovel">Empreendimento</span>
             </a>
         </div>    
         <div class="card-imovel">
-            <a href="#"> 
+            <a href="#" class="imovel_anchor" target="_blank"> 
             <img src="./assets/fotos_projeto/Meeting_Torre_Santoro_1920X10802.webp" alt="">
-            <span class="bairro">São Braz</span>
+            <h2 class="bairro">São Braz</h2>
             <span class="preco-imovel">R$910.000,00</span>
             <span class="tipo-imovel">Empreendimento</span>
             </a>
         </div>
         <div class="card-imovel">
-            <a href="#"> 
+            <a href="#" class="imovel_anchor" target="_blank"> 
             <img src="./assets/fotos_projeto/telas_TV_TorreMaranello2.webp" alt="">
-            <span class="bairro">Batista Campos</span>
+            <h2 class="bairro">Batista Campos</h2>
             <span class="preco-imovel">R$2.273.000,00</span>
             <span class="tipo-imovel">Empreendimento</span>
             </a>
         </div>   
     </section>
     <div class="button-center">
-        <a href="#"><button class="button">Ver todos</button></a>
+        <a href="/empreendimentos.html"><button class="button">Ver todos</button></a>
     </div>   
     
     <div class="whatsapp-container">
         <a href="https://api.whatsapp.com/send?phone=5591988437540&text=Olá,%20gostaria%20de%20receber%20mais%20informações%20sobre..." class="icon-wp" target="_blank">
             <div class="whatsapp-content">
                 <i class="fab fa-whatsapp"></i>
-            </div>    
+            </div>
+            <div class="alert-wpp">1</div>    
         </a>
     </div>
 
     <footer>
-
         <div class="footer-container">
             <div class="btn-f-container">
                 <a href="#"><button class="btn-footer">Fale Conosco</button></a>
@@ -209,9 +216,21 @@
             <h5>&#169; 2006-2023. Todos os direitos reservados</h6>
             <h6>Desenvolvido por Leonardo Pontes &#169;</h6>
         </div>
-
     </footer>
-
-    <script src="navbar.js"></script>
+    
+    
+    <script src="/js/loading.js"></script>
+    <script src="/js/index.js"></script>
 </body>
+    <div id="preloader">
+        <div class="l-logo">     
+        <img src="./assets/fotos_projeto/LOGOgradientletter_vetor.png" style="width: 100px; height: 100px;" alt="">
+        </div>
+        <div id="status">&nbsp;</div>
+        <div class="loader">
+            <span class="carregando"></span>
+            <span class="title">Carregando...</span>
+        </div>
+    </div>
 </html>
+

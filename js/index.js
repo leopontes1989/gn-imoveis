@@ -1,3 +1,8 @@
+
+// window.onload = function() {
+//   showLoading();
+// }
+
 function myFunction() {
     let x = document.getElementById("myLinks");
     let y = document.querySelector(".active");

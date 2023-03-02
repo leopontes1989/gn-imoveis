@@ -33,7 +33,7 @@ a {
     width: 100%;
     height: 50px;
     background-color: rgba(186, 0, 0);
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     
 }
 
@@ -55,13 +55,100 @@ a {
 }
 
 .btn-voltar i:hover {
-    color: rgba(255, 255, 0, 0.903);
-    transition: 1s;
+    opacity: .8;
 }
 
 .fa-house {
     color: #fff;
-    font-size: 30px;
-    padding-top: 16px;
+    font-size: 25px;
+    padding-top: 20px;
     padding-right: 10px;
 }
+
+.centralize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 95%;
+    height: 180px;
+    background-color: #fff;
+    box-shadow:  inset 0 0 10px 1px rgba(0, 0, 0, .3);
+    margin-bottom: 20px;
+}
+
+.desc-div {
+    width: 71%;
+    height: 40px;
+    background-color: rgba(186, 0, 0);
+    position: absolute;
+    right: 0;
+}
+
+.img-div img {
+    width: 310px;
+    height: 178px;
+}
+.img-div img:hover {
+    transition: .8s;
+    opacity: .8;
+    transform: scaleX(1.02);
+}
+
+.nome-titulo {
+   color: #fff;
+   font-size: 20px;
+   position: absolute;
+   top: -5px;
+    right: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.icons-div {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+}
+
+.icons-div span {
+    border-right: 2px dotted #cacaca;
+    margin-bottom: 5px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.icons-div span:last-child {
+    border: none;
+}
+
+i {
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+span {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.preco {
+    color: rgb(186, 0, 0);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.descricao-card {
+    position: absolute;
+    width: 68%;
+    font-size: 16px;
+    top: 55px;
+    right: 15px;
+    
+}
+
+

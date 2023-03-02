@@ -40,7 +40,6 @@
 .titulo-sec {
     color: #fff;
     font-size: 24px;
-    /* text-align: leffit; */
     font-weight:300;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -50,15 +49,12 @@
 
 .descricao-container {
     font-size: 22px;
-    /* border-bottom: solid 1px var(--main-color); */
 }
 
 .descricao-imovel {
     width: 100%;
-    text-align: center;
-    padding: 20px;
-    margin: 0;
-    box-sizing: border-box;
+    margin-top: 15px;
+    text-align: justify;
 }
 
 .icons-container {
@@ -68,12 +64,34 @@
 
 i {
     color: var(--main-color);
-    font-size: 40px;
+    font-size: 35px;
 }
 
-span {
+.span-icons {
     padding: 10px;
-    font-size: 30px;
+    font-size: 25px;
+    border-right: 2px dotted #cacaca;
+}
+
+.span-icons:last-child {
+    border: none;
+}
+
+span.condominio {
+    color: rgb(186, 0, 0);
+    font-weight: bold;
+}
+
+.video-imovel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-imovel iframe{
+    width: 85%;
+    height: 450px;
+    margin-bottom: 5px;
 }
 
 .btn-voltar {
@@ -89,8 +107,8 @@ span {
 
 .fa-house {
     color: #fff;
-    font-size: 30px;
-    padding-top: 5px;
+    font-size: 25px;
+    padding-top: 7px;
     padding-right: 10px;
 }
 
@@ -103,8 +121,12 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
+
+/* .carousel-control-prev:hover, .carousel-control-next:hover {
+    transition: all .5s ease-in-out;
+    background-color: rgba(0, 0, 0, .5);
+} */
 
 .footer-container {
     width: 100%;
@@ -190,5 +212,58 @@ footer i {
     color: #fff;
     font-size: 40px;
 }
+
+.icon-wp {
+    position: fixed;
+    bottom: 65px;
+    right: 30px;
+    background-color: #00c663;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.icon-wp i {
+    font-size: 50px;
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    color: #fff;
+}
+
+.icon-wp:hover {
+    transition: .5;
+    box-shadow: 2px 2px 20px #5fe690;
+    opacity: .9;
+    color: #fff;
+}
+
+.alert-wpp {
+    border-radius: 50%;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    bottom: 15px;
+    left: 40px;
+    animation: float 1s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%,100%{
+        transform:translatey(0)
+    }
+    50%{
+        transform:translatey(-3px)
+    }
+}
+
 
 
