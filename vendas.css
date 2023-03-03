@@ -22,9 +22,9 @@ a {
 .banner {
     background-image: url(/assets/fotos_projeto/banner_header-01.png);
     background-repeat: no-repeat;
-    background-size: 100% 190px;
+    background-size: 100% 210px;
     width: 100%;
-    height: 190px;
+    height: 210px;
     margin: 0;
     margin-bottom: 5px;
 }
@@ -39,7 +39,7 @@ a {
 
 .titulo-sec {
     color: #fff;
-    font-size: 18px;
+    font-size: 22px;
     /* text-align: left; */
     font-weight:300;
     letter-spacing: 2px;
@@ -61,7 +61,7 @@ opacity: .8;
 .fa-house {
     color: #fff;
     font-size: 25px;
-    padding-top: 3px;
+    padding-top: 20px;
     padding-right: 10px;
 }
 
@@ -74,7 +74,7 @@ opacity: .8;
 
 .card {
     width: 95%;
-    height: 180px;
+    height: 200px;
     background-color: #fff;
     box-shadow: 0 2px 5px 2px rgba(0, 0, 0, .3);
     margin-bottom: 20px;
@@ -82,7 +82,7 @@ opacity: .8;
 }
 
 .desc-div {
-    width: 71%;
+    width: 73.8%;
     height: 40px;
     background-color: rgba(186, 0, 0);
     position: absolute;
@@ -92,7 +92,7 @@ opacity: .8;
 
 .img-div img {
     width: 313px;
-    height: 180px;
+    height: 199px;
 }
 
 .img-div img:hover{
@@ -125,7 +125,7 @@ opacity: .8;
     border-right: 2px dotted #cacaca;
     margin-bottom: 5px;
     padding-bottom: 0;
-    padding-top: 0;
+    padding-top: 10px;
 }
 
 .icons-div span:last-child {
@@ -152,10 +152,10 @@ span {
 .descricao-card {
     position: absolute;
     width: 68%;
-    font-size: 16px;
+    font-size: 18px;
     top: 45px;
-    right: 15px;
-    
+    right: 30px;
+    text-align: justify;
 }
 
 .footer-container {
