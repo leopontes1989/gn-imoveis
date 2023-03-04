@@ -82,7 +82,7 @@ opacity: .8;
 }
 
 .desc-div {
-    width: 73.8%;
+    width: 100%;
     height: 40px;
     background-color: rgba(186, 0, 0);
     position: absolute;
@@ -93,11 +93,13 @@ opacity: .8;
 .img-div img {
     width: 313px;
     height: 199px;
+    position: absolute;
 }
 
 .img-div img:hover{
     transition: 800ms;
-    opacity: .7;
+    /* filter: brightness(80%); */
+    filter:hue-rotate(360deg);
 }
 
 .lowercase {
