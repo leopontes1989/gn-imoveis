@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empreendimentos</title>
-    <link rel="stylesheet" href="empreendimentos.css">
+    <link rel="stylesheet" href="vendas.css">
     <link rel="stylesheet" href="/fontawesome/css/all.min.css">
     <link rel="icon" href="./assets/fotos_projeto/LOGOgradientletter_vetor.png">
 
@@ -13,11 +13,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </head>
-<body>
-    <header class="header-container">        
+<body onLoad="hideLoading();">
+    <header class="header-container">
+      <a href="/index.html">        
         <div class="banner"></div>
+      </a>
         <div class="top-div">
-            <p class="titulo-sec">Oportunidades em Empreendimentos</p>
+            <p class="titulo-sec">Empreendimentos</p>
             <p class="btn-voltar"><a href="/index.html"><i class="fa-solid fa-house 2x"></i></a></p>  
         </div>
     </header>
@@ -26,10 +28,34 @@
         <div class="card">
         <div class="card-container">
             <div class="desc-div">
+              <span class="nome-titulo">Way Batista Campos</span>
+            </div>
+            <p class="descricao-card">Belíssimo empreendimento, com um preço que cabe no seu bolso! 3 tipos de plantas: 2 quartos com suíte + office e varanda gourmet; 3 quartos com suíte e varanda gourmet; 2 quartos com suíte + living ampliado e varanda gourmet. Clique para saber mais...</p>
+            <a href="/empreendimentos/wbatista.html" target="_blank">
+              <div class="img-div">
+                <img src="assets/thums-card/wbatista.webp" alt="" class="img-card">
+              </div>
+            </a>
+            </div>            
+            <div class="icons-div">
+                <span><i class="fa-solid fa-bed 2x"></i> - 2</span>
+                <span><i class="fa-solid fa-shower 2x"></i> - 2</span>
+                <span><i class="fa-solid fa-car 2x"></i> - 2</span>
+                <span><i class="fa-solid fa-arrows-left-right 2x"></i> 84 m²</span>
+                <span class="preco">R$697.000,00</span>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <section class="centralize">
+        <div class="card">
+        <div class="card-container">
+            <div class="desc-div">
               <span class="nome-titulo">Torre Ferrara - Umarizal</span>
             </div>
-            <p class="descricao-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quis voluptas alias odio reiciendis eligendi optio ipsa doloribus numquam explicabo perferendis aspernatur culpa nihil, voluptate, expedita ipsam fuga neque beatae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, necessitatibus! Repellendus pariatur tempore iusto alias illo impedit</p>
-            <a href="#">
+            <p class="descricao-card">Belíssimo empreendimento no coração do bairro Umarizal. 260m² divididos em 4 suítes, copa, área de serviço, varanda gourmet, sala de estar/jantar, suíte master com closet e banheira, sacada master, sacada de serviço, lavabo. Tudo no altíssimo padrão que você merece.</p>
+            <a href="/empreendimentos/ferrara.html" target="_blank">
               <div class="img-div">
                 <img src="./assets/thums-card/ferrara/2.jpg" alt="" class="img-card">
               </div>
@@ -38,7 +64,7 @@
             <div class="icons-div">
                 <span><i class="fa-solid fa-bed 2x"></i> - 4</span>
                 <span><i class="fa-solid fa-shower 2x"></i> - 5</span>
-                <span><i class="fa-solid fa-car 2x"></i> - 3 ou 4</span>
+                <span><i class="fa-solid fa-car 2x"></i> - 3</span>
                 <span><i class="fa-solid fa-arrows-left-right 2x"></i> 260 m²</span>
                 <span class="preco">R$2.170.000,00</span>
             </div>
@@ -52,18 +78,18 @@
             <div class="desc-div">
               <span class="nome-titulo">Torre Evidence - Batista Campos</span>
             </div>
-            <p class="descricao-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quis voluptas alias odio reiciendis eligendi optio ipsa doloribus numquam explicabo perferendis aspernatur culpa nihil, voluptate, expedita ipsam fuga neque beatae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, necessitatibus! Repellendus pariatur tempore iusto alias illo impedit</p>
-            <a href="#">
+            <p class="descricao-card">Belíssimo empreendimento no bairro do Umarizal. Torre Evidence, aptos com 1, 2 e 3 quartos, nas seguintes metragens 47, 64 e 94 m², com 1 e 2 vagas de garagem, área de lazer completa, entrega prevista para março de 2024. Sofisticação e custo benefício andam juntos por aqui!</p>
+            <a href="/empreendimentos/evidence.html" target="_blank">
               <div class="img-div">
                 <img src="./assets/thums-card/evidence/2.jpg" alt="" class="img-card">
               </div>
             </a>
             <div class="icons-div">
-                <span><i class="fa-solid fa-bed 2x"></i> - 1 a 2</span>
-                <span><i class="fa-solid fa-shower 2x"></i> -1 a 2</span>
-                <span><i class="fa-solid fa-car 2x"></i> - 1 a 2</span>
-                <span><i class="fa-solid fa-arrows-left-right 2x"></i> 47 - 94 m²</span>
-                <span class="preco">R$489.000,00</span>
+                <span><i class="fa-solid fa-bed 2x"></i> - 2</span>
+                <span><i class="fa-solid fa-shower 2x"></i> -2</span>
+                <span><i class="fa-solid fa-car 2x"></i> - 2</span>
+                <span><i class="fa-solid fa-arrows-left-right 2x"></i> 94 m²</span>
+                <span class="preco">R$489.756,00</span>
             </div>
         </div>
         </div>
@@ -75,17 +101,17 @@
           <div class="desc-div">
             <span class="nome-titulo">Torre Lumiar - Batista Campos</span>
           </div> 
-          <p class="descricao-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quis voluptas alias odio reiciendis eligendi optio ipsa doloribus numquam explicabo perferendis aspernatur culpa nihil, voluptate, expedita ipsam fuga neque beatae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, necessitatibus! Repellendus pariatur tempore iusto alias illo impedit</p>
-          <a href="#">
+          <p class="descricao-card">Excelente empreendimento no bairro Batista Campos, completo e elegante, unidades de 1, 2 ou 3 suítes, variando de 78 a 106m², completo com varanda gourmet, cozinha, área de serviço, sala de jantar e quarto.</p>
+          <a href="/empreendimentos/lumiar.html" target="_blank">
             <div class="img-div">
               <img src="./assets/thums-card/lumiar/1.jpg" alt="" class="img-card">
             </div>
           </a>
           <div class="icons-div">
-              <span><i class="fa-solid fa-bed 2x"></i> - 2 a 3</span>
-              <span><i class="fa-solid fa-shower 2x"></i> - 2 a 3</span>
-              <span><i class="fa-solid fa-car 2x"></i> - 1 a 2</span>
-              <span><i class="fa-solid fa-arrows-left-right 2x"></i> 78 - 106m²</span>
+              <span><i class="fa-solid fa-bed 2x"></i> - 3</span>
+              <span><i class="fa-solid fa-shower 2x"></i> - 3</span>
+              <span><i class="fa-solid fa-car 2x"></i> - 2</span>
+              <span><i class="fa-solid fa-arrows-left-right 2x"></i> 106m²</span>
               <span class="preco">R$605.000,00</span>
           </div>
       </div>
@@ -98,16 +124,16 @@
           <div class="desc-div">
             <span class="nome-titulo">Torre Santoro - São Braz</span>
           </div> 
-          <p class="descricao-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quis voluptas alias odio reiciendis eligendi optio ipsa doloribus numquam explicabo perferendis aspernatur culpa nihil, voluptate, expedita ipsam fuga neque beatae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, necessitatibus! Repellendus pariatur tempore iusto alias illo impedit</p>
-          <a href="#">
+          <p class="descricao-card">Belíssimo empreendimento com apartamentos de 123m², com 02 ou 03 suítes, sala 02 ambientes, varanda gourmet com reike, área de serviço completa e 22 vagas de garagem. Torre única com 4 apartamentos por andar, 4 elevadores.</p>
+          <a href="/empreendimentos/santoro.html" target="_blank">
             <div class="img-div">
               <img src="./assets/thums-card/santoro.jpg" alt="" class="img-card">
             </div>
           </a>
           <div class="icons-div">
-              <span><i class="fa-solid fa-bed 2x"></i> - 2 a 3</span>
-              <span><i class="fa-solid fa-shower 2x"></i> - 2 a 3</span>
-              <span><i class="fa-solid fa-car 2x"></i> - 1 a 2</span>
+              <span><i class="fa-solid fa-bed 2x"></i> - 3</span>
+              <span><i class="fa-solid fa-shower 2x"></i> - 3</span>
+              <span><i class="fa-solid fa-car 2x"></i> - 2</span>
               <span><i class="fa-solid fa-arrows-left-right 2x"></i> 123m²</span>
               <span class="preco">R$840.000,00</span>
           </div>
@@ -121,18 +147,18 @@
           <div class="desc-div">
             <span class="nome-titulo">Torre Maranello - Batista Campos</span>
           </div> 
-          <p class="descricao-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quis voluptas alias odio reiciendis eligendi optio ipsa doloribus numquam explicabo perferendis aspernatur culpa nihil, voluptate, expedita ipsam fuga neque beatae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, necessitatibus! Repellendus pariatur tempore iusto alias illo impedit</p>
-          <a href="#">
+          <p class="descricao-card">Apartamento com 4 suítes, wc social, sala de jantar, cozinha, área de serviço, laje técnica p/ splits, living com pé-direito duplo (6m) e piscina, cozinha interligada com backyard, backyard, suíte master com closet, sacada da suíte master com ofurô e 2 vagas de garagem. Condomínio completo.</p>
+          <a href="/empreendimentos/maranello.html" target="_blank">
             <div class="img-div">
               <img src="./assets/thums-card/maranello.jpg" alt="" class="img-card">
             </div>
           </a>
           <div class="icons-div">
-              <span><i class="fa-solid fa-bed 2x"></i> - 2 a 3</span>
-              <span><i class="fa-solid fa-shower 2x"></i> - 2 a 3</span>
-              <span><i class="fa-solid fa-car 2x"></i> - 2 a 3</span>
-              <span><i class="fa-solid fa-arrows-left-right 2x"></i> 232 - 273m²</span>
-              <span class="preco">R$2.285.000,00</span>
+              <span><i class="fa-solid fa-bed 2x"></i> - 3</span>
+              <span><i class="fa-solid fa-shower 2x"></i> - 3</span>
+              <span><i class="fa-solid fa-car 2x"></i> - 3</span>
+              <span><i class="fa-solid fa-arrows-left-right 2x"></i> 273m²</span>
+              <span class="preco">R$1.951.000,00</span>
           </div>
       </div>
       </div>
@@ -144,25 +170,62 @@
           <div class="desc-div">
             <span class="nome-titulo">Torre Noir - Batista Campos</span>
           </div> 
-          <p class="descricao-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quis voluptas alias odio reiciendis eligendi optio ipsa doloribus numquam explicabo perferendis aspernatur culpa nihil, voluptate, expedita ipsam fuga neque beatae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, necessitatibus! Repellendus pariatur tempore iusto alias illo impedit</p>
-          <a href="#">
+          <p class="descricao-card">Apartamento com 138m², com 3suítes, banheiro social, sala estar/jantar, sacada, cozinha/serviço, piso em porcelanato, e laje técnica p/ splits e 2 vagas de garagem. 2 apartamentos por andar sendo 19 tipo e a cobertura horizontal. Condomínio completo.</p>
+          <a href="/empreendimentos/noir.html" target="_blank">
             <div class="img-div">
               <img src="./assets/thums-card/noir.JPG" alt="" class="img-card">
             </div>
           </a>
           <div class="icons-div">
               <span><i class="fa-solid fa-bed 2x"></i> - 3</span>
-              <span><i class="fa-solid fa-shower 2x"></i> - 3 a 4</span>
-              <span><i class="fa-solid fa-car 2x"></i> - 2 a 3</span>
-              <span><i class="fa-solid fa-arrows-left-right 2x"></i> 138 - 276m²</span>
+              <span><i class="fa-solid fa-shower 2x"></i> - 4</span>
+              <span><i class="fa-solid fa-car 2x"></i> - 3</span>
+              <span><i class="fa-solid fa-arrows-left-right 2x"></i> 276m²</span>
               <span class="preco">R$1.600.000,00</span>
           </div>
       </div>
       </div>
     </section>
 
+    <div class="whatsapp-container">
+      <a href="https://api.whatsapp.com/send?phone=5591988437540&text=Olá,%20gostaria%20de%20receber%20mais%20informações%20sobre..." class="icon-wp" target="_blank">
+          <div class="whatsapp-content">
+              <i class="fab fa-whatsapp"></i>
+          </div>
+          <div class="alert-wpp">1</div>    
+      </a>
+  </div>
+    <footer>
+        <div class="footer-container">
+            <div class="btn-f-container">
+                <a href="#"><button class="btn-footer">Fale Conosco</button></a>
+            </div>
+            <nav class="footer-nav">
+                <ul class="footer-list"> 
+                    <li class="footer-item"><a href="https://wa.me/559188437540" target="_blank"><i class="fa-brands fa-whatsapp"></i></i></a></li>
+                    <li class="footer-item"><a href="https://www.facebook.com/gilberto.pontes.7758" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="footer-item"><a href="https://instagram.com/_gnimoveis" target="_blank"><i class="fa-brands fa-instagram"></i></i></a></li>
+                </ul>
+            </nav>
 
+            <h4>GN Imóveis &#174;</h4>
+            <h5>&#169; 2006-2023. Todos os direitos reservados</h6>
+            <h6>Desenvolvido por Leonardo Pontes &#169;</h6>
+        </div>
+    </footer>
 
-
+    <script src="/js/loading.js"></script>
 </body>
+
+<div id="preloader">
+  <div class="l-logo">     
+  <img src="./assets/fotos_projeto/LOGOgradientletter_vetor.png" style="width: 100px; height: 100px;" alt="">
+  </div>
+  <div id="status">&nbsp;</div>
+  <div class="loader">
+      <span class="carregando"></span>
+      <span class="title">Carregando...</span>
+  </div>
+</div>
+
 </html>

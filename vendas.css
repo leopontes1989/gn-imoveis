@@ -26,7 +26,7 @@ a {
     width: 100%;
     height: 210px;
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 }
 
 .top-div {
@@ -61,7 +61,7 @@ opacity: .8;
 .fa-house {
     color: #fff;
     font-size: 25px;
-    padding-top: 22px;
+    padding-top: 18px;
     padding-right: 10px;
 }
 
@@ -98,8 +98,7 @@ opacity: .8;
 
 .img-div img:hover{
     transition: 800ms;
-    /* filter: brightness(80%); */
-    filter:hue-rotate(360deg);
+    filter: brightness(70%);
 }
 
 .lowercase {
@@ -157,7 +156,7 @@ span {
     font-size: 18px;
     top: 45px;
     right: 30px;
-    text-align: justify;
+    text-align:end;
 }
 
 .footer-container {
@@ -294,3 +293,162 @@ span {
         transform:translatey(-1px)
     }
 }
+
+/* loader */
+
+div#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(168, 0, 0);
+    z-index: 999999;
+  }
+
+  #preloader img {
+    border: 2px solid #fff;
+    border-radius: 20%;
+    position: absolute;
+    top: 30%;
+  }
+
+  .l-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .loader .title {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    text-align: center;
+  }
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top:-50px; 
+    margin-left:-50px;
+  }
+  /*Carregando*/
+  .carregando {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 20%;
+    margin-left: 18%;
+    border-top: 3px solid #fff;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+  #header {
+    height: 50px;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(186, 0, 0);
+    visibility: hidden;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a  {
+    display: block;
+    padding: .5rem;
+        color: #fff;
+    text-decoration: none;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        background-image: url(/assets/fotos_projeto/mobile-banner1.png);
+        background-size: cover;
+    }
+
+    div.card {
+        width: 85%;
+        height: 360px;
+        border-radius: 15px;
+    }
+
+    .desc-div {
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        height: 50px;
+    }
+
+    .descricao-card {
+        display: none;
+    }
+
+    .img-div {
+        position: relative;
+        top: 45px;
+    }
+    .img-div img {
+        width: 100%;
+        height: 220px;
+        border-bottom: 2px solid rgb(186, 0, 0);
+    }
+
+    
+    .icons-div {
+        position: relative;
+        top: 270px;
+        left: 6px;
+        border-bottom: #cacaca;
+        
+    }
+    
+    .icons-div i {
+        font-size: 22px;
+        
+    }
+    
+    .icons-div span {
+        font-size: 22px;
+    }
+    
+    span.preco {
+        position: absolute;
+        left: 0px;
+        top: 30px;
+        font-size: 28px;
+    }
+    .icons-div span:nth-child(4) {
+        border: none;
+    }
+
+    .fa-house {
+        font-size: 22px;
+        padding-top: 19px;
+    }
+
+    
+
+}
+

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
+
+
 :root {
      --main-color: rgb(186, 0, 0);
 }
@@ -8,6 +10,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
+}
+
+#header {
+    color: #000;
 }
 
 body, html {
@@ -27,7 +33,6 @@ a:hover {
     background-size: 100% 210px;
     width: 100%;
     height: 210px;
-    margin: 0;
 }
 
 .ul-top {
@@ -117,7 +122,7 @@ a:hover {
 
 .apresentacao-container {
     width: 100%;
-    height: 300px;
+    height: 250px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-content: center;
@@ -125,6 +130,8 @@ a:hover {
     /* padding: 30px 20px 30px 20px; */
     text-align: center;
     box-sizing: border-box;
+    position: relative;
+    bottom: 20px;
 }
 
 .video {
@@ -164,6 +171,7 @@ a:hover {
     position: relative;
     left: 50px;
     margin-bottom: 20px;
+    margin-left: 10px;
 }
 
 .imoveis-card-container, .imovel_anchor {
@@ -184,9 +192,6 @@ a:hover {
     border-radius: 5px;
     cursor: pointer;
 }
-
-
-
 
 .card-imovel img:hover {
     transition: .5s;
@@ -387,14 +392,6 @@ a:hover {
     }
 }
 
-
-
-/* Menu hamburguer */
-
-.topnav {
-    display: none;
-}
-
 /* loader */
 
 div#preloader {
@@ -404,15 +401,15 @@ div#preloader {
     right: 0;
     bottom: 0;
     background-color: rgb(168, 0, 0);
-    z-index: 1;
+    z-index: 999;
   }
 
   #preloader img {
     border: 2px solid #fff;
     border-radius: 20%;
     position: absolute;
-    top: 26%;
-    margin-right: 15px;
+    top: 30%;
+    margin-right: 11px;
   }
 
   .l-logo {
@@ -457,37 +454,174 @@ div#preloader {
     }
   } 
 
+#header {
+    height: 50px;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(186, 0, 0);
+    visibility: hidden;
+}
 
-@media (max-width: 768px) {
-    .banner {
-        background-image: url(./assets/fotos_projeto/banner-responsivo.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a  {
+    display: block;
+    padding: .5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .apresentacao-container {
+        height: 400px;
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    #nav-container {
-        display: none;
+    .p-apresentacao {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .banner {
+        background-image: url(./assets/fotos_projeto/mobile-banner1.png);
+        background-size: cover;
+    }
+
+    body, ul {
+        margin: 0;
+        padding: 0;
+        font-family: 'Oswald', sans-serif;
+        letter-spacing: 1px;
     }
 
     .ul-top {
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 0;
-        box-sizing: border-box;
-        margin-bottom: 0;
-        margin: 0;
-        border: none;
-        background-color: rgba(186, 0, 0, 0.502)
+        display: none;
     }
 
-    .ul-top li {
-        padding: 10px 0 10px 0;
+     #nav {
+        background-color: rgb(186, 0, 0);
+        width: 100%;
+        height: 50px;
+        margin-bottom: 400px;
+        padding: 0;
+        margin: 0;
     }
+
+
     
+    #header {
+        height: 50px;
+        padding: 1rem;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: rgb(186, 0, 0);
+        visibility: visible;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        list-style: none;
+        width: 100%;
+        top: 210px;
+        right: 0;
+        background: rgb(186, 0, 0);
+        z-index: 500;
+        text-align: center;
+        transition: .6s;
+        height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+        margin: 0;
+        padding: 0;
+       }
+    
+       #nav {
+        display: flex;
+       }
+
+       #nav.active #menu {
+        height: calc(100vh - 451px);
+        visibility: visible;
+        overflow-y: auto;
+       }
+    
+       #menu a {
+        padding: 1rem 0;
+        margin: 0;
+        color: #fff;
+        font-size: 22px;
+        border-bottom: 1px solid rgba(255, 255, 255, .2);
+
+       }
+    
+       #btn-mobile {
+        display: flex;
+        justify-content: end;
+        background: none;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        gap: .5rem;
+        z-index: 999;
+       }  
+    
+        #hamburguer {
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+        color: #fff;
+        margin-top: 16px;
+        position: absolute;
+        right: 10px;
+       }
+    
+       #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .5s;
+        position: relative;
+       }
+    
+       #nav.active #hamburguer {
+        border-top-color: transparent;
+       }
+    
+       #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+        height: 3px;
+       }
+    
+       #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        height: 3px;
+        top: -8px;
+       }
+
     .apresentacao-container {
         display: inline-block;
+        margin-top: 20px;
     }
 
     .video {
@@ -498,7 +632,7 @@ div#preloader {
     .p-apresentacao {
         width: 100%;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 30px;
         margin-bottom: 20px;
     }
 
@@ -518,44 +652,24 @@ div#preloader {
     }
 
     .imoveis-card-container {
-        width: 75%;
+        width: 80%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
         padding-right: 30px;
+        box-sizing: border-box;
     }
 
-    .topnav {
-        display: block;
-        overflow: hidden;
-        background-color: rgb(186, 0, 0);
-        position: relative;
-        border: none;  
-      }
-      
-      .topnav #myLinks {
-        display: none;
-      }
-      
-      .topnav a {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 20px;
-        display: block;
-        padding-right: 10px;
-      }
-      
-      .topnav a.icon {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      
-      .active {
-        height: 30px;
-      }
+    .apresentacao-container {
+        height: 400px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}
+
+
+
 
     
-}
+

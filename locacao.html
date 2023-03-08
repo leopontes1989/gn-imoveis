@@ -16,11 +16,11 @@
   <body onLoad='hideLoading();'>
 
     <header class="header-container">
-        
+        <a href="/index.html">
         <div class="banner"></div>
-
+        </a>
         <div class="top-div">
-            <p class="titulo-sec">Oportunidades para Locação</p>
+            <p class="titulo-sec">Locação</p>
             <p class="btn-voltar"><a href="/index.html"><i class="fa-solid fa-house 2x"></i></a></p>  
         </div>
     </header>
@@ -29,10 +29,33 @@
         <div class="card">
         <div class="card-container">
             <div class="desc-div">
+              <span class="nome-titulo">Ed. Maria do Céu - Campina</span>
+            </div>
+            <p class="descricao-card">Apartamento com 65 m², localizado no centro de belém, rua óde allmeida próximo ao estacionamento da palmeira, sala de estar, 2 quartos, cozinha, área de serviço ,banheiro social, porteiro eletrônico.
+            </p>
+            <a href="/locacao/maria-do-ceu.html" target="_blank">
+              <div class="img-div">
+                <img src="./assets/thums-card/maria-do-ceu.jpg" alt="" class="img-card">
+              </div>
+            </a>
+            <div class="icons-div">
+                <span class="span-icons"><i class="fa-solid fa-bed 2x"></i> - 2</span>
+                <span><i class="fa-solid fa-shower 2x"></i> - 1</span>
+                <span><i class="fa-solid fa-arrows-left-right 2x"></i> 65 m²</span>
+                <span class="preco">R$1.600,00</span>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="centralize">
+        <div class="card">
+        <div class="card-container">
+            <div class="desc-div">
               <span class="nome-titulo">Sala Comercial - Umarizal</span>
             </div>
-            <p class="descricao-card">Sala comercial com banheiro, com ótima localização Alcindo cacela entre Rua Diogo Moia e Antonio Barreto, perto de muitas faclidades do bairro ótima para consultório de especialidades diversas, escritório, espaço de atendimentos etc.</p>
-            <a href="/imoveis/sublime.html" target="_blank">
+            <p class="descricao-card">Sala comercial com banheiro, com ótima localização Alcindo cacela entre Rua Diogo Moia e Antonio Barreto, perto de muitas facilidades do bairro ótima para consultório de especialidades diversas, escritório, espaço de atendimentos etc.</p>
+            <a href="/locacao/sc-umarizal.html" target="_blank">
               <div class="img-div">
                 <img src="./assets/thums-card/salacomercial-loc.jpg" alt="" class="img-card">
               </div>
@@ -50,17 +73,17 @@
         <div class="card">
         <div class="card-container">
             <div class="desc-div">
-              <span class="nome-titulo">Sala Comercial - Umarizal</span>
+              <span class="nome-titulo">Sala Comercial - Marco</span>
             </div>
             <p class="descricao-card">2 salas em espaço comercial a primeira sala bem ampla  medindo 2,60 x 9,10, a segunda menor contígua, ótima localizaçao na Alcindo Cacela próximo a Rua Digo Moia. Espaço muito bom para,consultório, espaço de dança, espaço terapeutico, espaço para implantação de escritório etc. No valor de R$ 1.800,00 já está incluido o consumo de energia elétrica e água.</p>
-            <a href="#" target="_blank">
+            <a href="/locacao/sc-marco.html" target="_blank">
               <div class="img-div">
                 <img src="./assets/thums-card/salaumarizal.png" alt="" class="img-card">
               </div>
             </a>
             <div class="icons-div">
                 <span><i class="fa-solid fa-shower 2x"></i> - 1</span>
-                <span class="preco">R$1.800,00</span>
+                <span class="preco">R$1.900,00</span>
             </div>
         </div>
         </div>
@@ -96,4 +119,16 @@
     <script src="/js/loading.js"></script>
     <script src="/js/index.js"></script>
 </body>
+
+<div id="preloader">
+  <div class="l-logo">     
+  <img src="./assets/fotos_projeto/LOGOgradientletter_vetor.png" style="width: 100px; height: 100px;" alt="">
+  </div>
+  <div id="status">&nbsp;</div>
+  <div class="loader">
+      <span class="carregando"></span>
+      <span class="title">Carregando...</span>
+  </div>
+</div>
+
 </html>
