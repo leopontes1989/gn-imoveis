@@ -194,12 +194,9 @@ a:hover {
     /* border: #F7EE74 1px solid; */
 }
 
-.card-imovel.milion-fix {
-    background-color: yellow;
-}
-
 .card-imovel img {
     width: 100%;
+    max-width: 200px;
     height: 200px;
     border-radius: 5px;
     cursor: pointer;
@@ -551,9 +548,6 @@ div#preloader {
         padding-left: 50px;
         
     }
-    .card-imovel {
-        width: 300px;
-    }
 
     .banner {
         background-image: url(/assets/fotos_projeto/banner_header2.png);
@@ -752,6 +746,13 @@ div#preloader {
     }
 
 
+}
+
+@media (min-width: 500px) {
+    .imoveis-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
 }
 
 
