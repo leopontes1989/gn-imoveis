@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 :root {
-     --main-color: rgb(186, 0, 0);
+    --paleta-0: rgb(168, 0, 0);
+    --paleta-1: #2e2f34;
+    --paleta-2: #3c4253;
+    --paleta-3: #5f7285;
+    --paleta-4: #a5b0c2;
+    --paleta-5: #241E21;
+    --paleta-6: #273B63;
+
 }
 
 * {
@@ -32,7 +39,7 @@ a {
 .top-div {
     width: 100%;
     height: 50px;
-    background-color: rgba(186, 0, 0);
+    background: linear-gradient(var(--paleta-0), rgb(150,0,0));
     margin-bottom: 40px;
     
 }
@@ -84,11 +91,12 @@ opacity: .8;
 .desc-div {
     width: 100%;
     height: 40px;
-    background-color: rgba(186, 0, 0);
-    position: absolute;
-    right: 0;
-}
+    background: linear-gradient(#fff, rgba(160, 160, 160, 0.274));
 
+    position: absolute;
+    right: 0px;
+    border-bottom-left-radius: 10px;
+}
 
 .img-div img {
     width: 313px;
@@ -106,13 +114,14 @@ opacity: .8;
 }
 
 .nome-titulo {
-   color: #fff;
+   color: var(--paleta-0);
    font-size: 20px;
+   font-weight: bold;
    position: absolute;
-   top: -5px;
-    right: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+   right: 5px;
+   bottom: -1px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
 }
 
 
@@ -134,7 +143,7 @@ opacity: .8;
 }
 
 i {
-    color: var(--main-color);
+    color: var(--paleta-0);
     font-size: 20px;
 }
 
@@ -162,7 +171,7 @@ span {
 .footer-container {
     width: 100%;
     height: 280px;
-    background-color: var(--main-color);
+    background: linear-gradient(var(--paleta-0), rgb(120,0,0));
     box-sizing: border-box;
     padding-top: 15px;
 }
@@ -191,7 +200,7 @@ span {
 
 .btn-footer:hover {
     background-color: #fff;
-    color: var(--main-color);
+    color: var(--paleta-0);
 }
 
 .footer-list {
@@ -254,7 +263,7 @@ span {
     height: 70px;
     text-align: center;
     text-decoration: none;
-    z-index: 100;
+    z-index: 10000;
 }
 
 .icon-wp i {
@@ -310,7 +319,7 @@ div#preloader {
     border: 2px solid #fff;
     border-radius: 20%;
     position: absolute;
-    top: 30%;
+    top: 20%;
   }
 
   .l-logo {
@@ -383,6 +392,72 @@ div#preloader {
     display: none;
 }
 
+@media (max-width: 1200px) {
+
+    .banner {
+        background-image: url(/assets/fotos_projeto/banner_header-01.png);
+        background-size: cover;
+    }
+
+    div.card {
+        width: 85%;
+        height: 360px;
+        border-radius: 15px;
+    }
+
+    .desc-div {
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        height: 50px;
+    }
+
+    .descricao-card {
+        display: none;
+    }
+
+    .img-div {
+        position: relative;
+        top: 45px;
+    }
+    .img-div img {
+        width: 100%;
+        height: 220px;
+        border-bottom: 2px solid rgb(186, 0, 0);
+    }
+
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+    }
+    
+    .icons-div {
+        position: relative;
+        top: 270px;
+        left: 6px;
+        border-bottom: #cacaca;
+        
+    }
+    
+    .icons-div i {
+        font-size: 22px;
+        
+    }
+    
+    .icons-div span {
+        font-size: 22px;
+    }
+    
+    span.preco {
+        position: absolute;
+        left: 0px;
+        top: 30px;
+        font-size: 28px;
+    }
+    .icons-div span:nth-child(4) {
+        border: none;
+    }
+}
+
 @media (max-width: 768px) {
     .banner {
         background-image: url(/assets/fotos_projeto/mobile-banner1.png);
@@ -451,4 +526,6 @@ div#preloader {
     
 
 }
+
+
 

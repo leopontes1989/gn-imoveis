@@ -14,7 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 
-<body>
+<body onload="hideLoading();">
     <header class="header-container">
       <a href="/index.html">
         <div class="banner"></div>
@@ -111,7 +111,7 @@
           <p class="titulo-sec">Localização no mapa</p>
       </div>
         <div class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15954.19835660732!2d-48.4924374!3d-1.4449652!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48f3b860ff067%3A0x2ce32bca2d486d47!2sCondom%C3%ADnio%20Abilio%20Velho!5e0!3m2!1sen!2sbr!4v1677970831825!5m2!1sen!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15954.19835660732!2d-48.4924374!3d-1.4449652!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48f3b860ff067%3A0x2ce32bca2d486d47!2sCondom%C3%ADnio%20Abilio%20Velho!5e0!3m2!1sen!2sbr!4v1677970831825!5m2!1sen!2sbr" width="85%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <footer>
@@ -142,7 +142,20 @@
             </div>
             <div class="alert-wpp">1</div>    
         </a>
-    </div>
+      </div>
 
+      <div id="preloader">
+        <div class="l-logo">     
+        <img src="../assets/fotos_projeto/LOGOgradientletter_vetor.png" style="width: 100px; height: 100px;" alt="">
+        </div>
+        <div id="status">&nbsp;</div>
+        <div class="loader">
+            <span class="carregando"></span>
+            <span class="title">Carregando...</span>
+        </div>
+      </div>
+
+      <script src="/js/loading.js"></script>
+      <script src="/js/index.js"></script>
 </body>
 </html>
