@@ -170,14 +170,16 @@ a:hover {
 }
 
 .imoveis-card-container {
-    width: 90%;
+    width: 95%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    place-items: center;
     column-gap: 40px;
-    position: relative;
+    margin-bottom: 20px;
+    /* position: relative;
     left: 50px;
     margin-bottom: 20px;
-    margin-left: 10px;
+    margin-left: 10px; */
 }
 
 .imoveis-card-container, .imovel_anchor {
@@ -190,6 +192,10 @@ a:hover {
     padding: 20px;
     border-radius: 8px;
     /* border: #F7EE74 1px solid; */
+}
+
+.card-imovel.milion-fix {
+    background-color: yellow;
 }
 
 .card-imovel img {
