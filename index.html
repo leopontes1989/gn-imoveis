@@ -14,8 +14,11 @@
 
 
 </head>
-<body onload="hideLoading()">
-    <div class="banner"></div>
+<body>
+    <div class="all-centralize">
+    <div class="banner-centralize">
+        <div class="banner"></div>
+    </div>
   
     <header class="header-container">       
         <nav id="nav-container">
@@ -109,43 +112,41 @@
                 <span class="tipo-imovel">Apartamento <br/> Venda</span>
             </div>
         </a>
-        </section>
-    <section class="imoveis-card-container icc2">
-
-    <a href="/imoveis/luanda-2.html" class="imovel_anchor" target="_blank">
-        <div class="card-imovel">
-                <img src="./assets/thumbs/luanda-thumb.jpg" alt="">
-                <h2 class="bairro">Pedreira</h2>
-                <span class="preco-imovel">R$450.000,00</span>
-                <span class="tipo-imovel">Apartamento<br/>Venda</span>
-        </div>
-    </a>
-    <a href="/imoveis/fontainebleu.html" class="imovel_anchor" target="_blank">    
-        <div class="card-imovel">
-            <img src="./assets/thumbs/fontb-thumb.jpg" alt="">
-            <h2 class="bairro">Fátima</h2>
-            <span class="preco-imovel">R$520.000,00</span>
-            <span class="tipo-imovel">Apartamento<br/>  Venda</span>
-        </div> 
-    </a>
-    <a href="/imoveis/parthenon.html" class="imovel_anchor" target="_blank">   
-        <div class="card-imovel">
-            <img src="./assets/thumbs/parthenon-thumb.jpg" alt="">
-            <h2 class="bairro">Pedreira</h2>
-            <span class="preco-imovel">R$560.000,00</span>
-            <span class="tipo-imovel">Apartamento <br/> Venda</span>
-        </div>
-    </a>
-    <a href="/imoveis/apsmeira.html" class="imovel_anchor" target="_blank">
-        <div class="card-imovel">
-            <img src="./assets/thumbs/apsmeira-thumb.jpg" alt="">
-            <h2 class="bairro">Batista Campos</h2>
-            <span class="preco-imovel">R$650.000,00</span>
-            <span class="tipo-imovel">Apartamento <br/> Venda</span>
-        </div>
-    </a>
         
+        <a href="/imoveis/luanda-2.html" class="imovel_anchor" target="_blank">
+            <div class="card-imovel">
+                    <img src="./assets/thumbs/luanda-thumb.jpg" alt="">
+                    <h2 class="bairro">Pedreira</h2>
+                    <span class="preco-imovel">R$450.000,00</span>
+                    <span class="tipo-imovel">Apartamento<br/>Venda</span>
+            </div>
+        </a>
+        <a href="/imoveis/fontainebleu.html" class="imovel_anchor" target="_blank">    
+            <div class="card-imovel">
+                <img src="./assets/thumbs/fontb-thumb.jpg" alt="">
+                <h2 class="bairro">Fátima</h2>
+                <span class="preco-imovel">R$520.000,00</span>
+                <span class="tipo-imovel">Apartamento<br/>  Venda</span>
+            </div> 
+        </a>
+        <a href="/imoveis/parthenon.html" class="imovel_anchor" target="_blank">   
+            <div class="card-imovel">
+                <img src="./assets/thumbs/parthenon-thumb.jpg" alt="">
+                <h2 class="bairro">Pedreira</h2>
+                <span class="preco-imovel">R$560.000,00</span>
+                <span class="tipo-imovel">Apartamento <br/> Venda</span>
+            </div>
+        </a>
+        <a href="/imoveis/apsmeira.html" class="imovel_anchor" target="_blank">
+            <div class="card-imovel">
+                <img src="./assets/thumbs/apsmeira-thumb.jpg" alt="">
+                <h2 class="bairro">Batista Campos</h2>
+                <span class="preco-imovel">R$650.000,00</span>
+                <span class="tipo-imovel">Apartamento <br/> Venda</span>
+            </div>
+        </a>   
     </section>
+
         <div class="button-center">
             <a href="/vendas.html"><button class="button">Ver todos</button></a>
         </div>
@@ -223,17 +224,19 @@
             <h6>Desenvolvido por Leonardo Pontes &#169;</h6>
         </div>
     </footer>
-    
-    <div id="preloader">
-        <div class="l-logo">     
-        <img src="./assets/fotos_projeto/LOGOgradientletter_vetor.png" style="width: 100px; height: 100px;" alt="">
-        </div>
-        <div id="status">&nbsp;</div>
-        <div class="loader">
-            <span class="carregando"></span>
-            <span class="title">Carregando...</span>
+    <div class="loader-container">
+        <div class="preloader">
+            <div class="l-logo">     
+            <img src="./assets/fotos_projeto/LOGOgradientletter_vetor.png" style="width: 100px; height: 100px;" alt="">
+            </div>
+            <div id="status">&nbsp;</div>
+            <div class="loader">
+                <span class="carregando"></span>
+                <span class="title">Carregando...</span>
+            </div>
         </div>
     </div>
+</div>
     
     <script src="/js/loading.js"></script>
     <script src="/js/index.js"></script>

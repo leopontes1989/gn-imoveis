@@ -19,13 +19,14 @@
     font-family: 'Oswald', sans-serif;
 }
 
+
+
 #header {
     color: #000;
 }
 
-body, html {
-    position: relative;
-    width: 100%;
+body {
+    max-width: 1500px;
 }
 
 a:hover {
@@ -37,8 +38,8 @@ a:hover {
 .banner {
     background-image: url(/assets/fotos_projeto/banner_header-01.png);
     background-repeat: no-repeat;
+    background-position: cover;
     background-size: 100% 210px;
-    width: 100%;
     height: 210px;
 }
 
@@ -170,16 +171,11 @@ a:hover {
 }
 
 .imoveis-card-container {
-    width: 95%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    place-items: center;
-    column-gap: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: center;
     margin-bottom: 20px;
-    /* position: relative;
-    left: 50px;
-    margin-bottom: 20px;
-    margin-left: 10px; */
 }
 
 .imoveis-card-container, .imovel_anchor {
@@ -188,7 +184,7 @@ a:hover {
 
 .card-imovel {
     background-color: rgba(160, 160, 160, 0.274);
-    box-sizing:border-box;
+    box-sizing: border-box;
     padding: 20px;
     border-radius: 8px;
     /* border: #F7EE74 1px solid; */
@@ -404,7 +400,7 @@ a:hover {
 
 /* loader */
 
-div#preloader {
+.preloader {
     position: fixed;
     top: 0;
     left: 0;
@@ -413,8 +409,7 @@ div#preloader {
     background: linear-gradient(var(--paleta-0), rgb(120,0,0));
     z-index: 999;
   }
-
-  #preloader img {
+.preloader img {
     border: 2px solid #fff;
     border-radius: 20%;
     position: absolute;
@@ -492,42 +487,23 @@ div#preloader {
     display: none;
 }
 
-@media (min-width: 2500px) {
-    .imoveis-card-container {
-        width: 60%;
-        margin-left: 17vw;
+@media (min-width: 1500px) {
+    html {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
-}
-@media (min-width: 1801px) {
-    .imoveis-card-container {
-        padding-left: 80px;
-    }
-
-    .apresentacao-container {
-        height: 400px;
-        
-    }
-
-    .video {
-        width: 600px;
-    }
-
-    .p-titulo {
-        font-size: 40px;
-    }
-
-    .p-descricao {
-        font-size: 24px;
-        line-height: 50px;
+    .all-centralize {
+        width: 100%;
     }
 }
 
-@media (max-width: 1800px) {
+/* @media (max-width: 1800px) {
     .imoveis-card-container {
         padding-left: 30px;
     }
 }
-
+*/
 @media (max-width: 1200px) {
     .apresentacao-container {
         height: 400px;
@@ -542,25 +518,17 @@ div#preloader {
 }
 
 @media (max-width: 1000px) {
-    .imoveis-card-container {
-        grid-template-columns: repeat(2, 2fr);
-        row-gap: 30px;
-        padding-left: 50px;
-        
-    }
-
     .banner {
         background-image: url(/assets/fotos_projeto/banner_header2.png);
         background-size: cover;
     }
 }
 
-
 @media (max-width: 768px) {
 
     .banner {
-        background-image: url(./assets/fotos_projeto/mobile-banner1.png);
-        background-size: cover;
+
+        
     }
 
     #preloader img {
@@ -618,26 +586,26 @@ div#preloader {
         padding: 0;
        }
     
-       #nav {
-        display: flex;
-       }
+    #nav {
+    display: flex;
+    }
 
-       #nav.active #menu {
+    #nav.active #menu {
         height: calc(100vh - 450px);
         visibility: visible;
         overflow-y: auto;
-       }
-    
-       #menu a {
+    }
+
+    #menu a {
         padding: 1rem 0;
         margin: 0;
         color: #fff;
         font-size: 22px;
         border-bottom: 1px solid rgba(255, 255, 255, .2);
 
-       }
-    
-       #btn-mobile {
+    }
+
+    #btn-mobile {
         display: flex;
         justify-content: end;
         background: none;
@@ -646,9 +614,9 @@ div#preloader {
         cursor: pointer;
         gap: .5rem;
         z-index: 999;
-       }  
-    
-        #hamburguer {
+    }  
+
+    #hamburguer {
         display: block;
         width: 20px;
         border-top: 2px solid;
@@ -656,9 +624,9 @@ div#preloader {
         margin-top: 16px;
         position: absolute;
         right: 10px;
-       }
-    
-       #hamburguer::after, #hamburguer::before {
+    }
+
+    #hamburguer::after, #hamburguer::before {
         content: '';
         display: block;
         width: 20px;
@@ -667,18 +635,18 @@ div#preloader {
         margin-top: 5px;
         transition: .5s;
         position: relative;
-       }
-    
-       #nav.active #hamburguer {
+    }
+
+    #nav.active #hamburguer {
         border-top-color: transparent;
-       }
-    
-       #nav.active #hamburguer::before {
+    }
+
+    #nav.active #hamburguer::before {
         transform: rotate(135deg);
         height: 3px;
-       }
-    
-       #nav.active #hamburguer::after {
+    }
+
+    #nav.active #hamburguer::after {
         transform: rotate(-135deg);
         height: 3px;
         top: -8px;
@@ -716,18 +684,6 @@ div#preloader {
         margin-top: 20px;
     }
 
-    .imoveis-card-container {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        padding-right: 20px;
-        box-sizing: border-box;
-        gap: 20px;
-        margin: 0;
-        padding: 0;
-        
-    }
-
     .apresentacao-container {
         height: 400px;
         grid-template-columns: repeat(1, 1fr);
@@ -737,25 +693,15 @@ div#preloader {
         margin-top: 20px;
     }
 
-    .icc2 {
-        margin-top: 20px;
+}
+
+@media (max-width: 520px) {
+    .banner {
+        background-image: url(./assets/fotos_projeto/mobile-banner1.png);
+        background-size:auto;
+        background-position: 70%;
     }
-
-    .card-imovel {
-        margin: 0 0 2vw 2vw;
-    }
-
-
 }
-
-@media (min-width: 500px) {
-    .imoveis-card-container {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-}
-}
-
-
 
 
     

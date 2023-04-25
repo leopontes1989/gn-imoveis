@@ -2,7 +2,13 @@
 //     setTimeout(() => hideLoading(), 2000);
 // }
 
-function hideLoading() {
-    const ploader = document.getElementById('preloader');
-    ploader.remove();
+window.onload = () => {
+    hideLoading();
 }
+
+const hideLoading = () => {
+    const ploader = document.querySelector('.preloader');
+    ploader.style.display = 'none';
+}
+
+
